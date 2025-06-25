@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🏏 Thunder Blazers | Team Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/80x80?text=Logo" alt="Team Logo" class="logo" />
+    <h1>Thunder Blazers</h1>
+    <p class="slogan">"Strike Fast. Blaze Bright."</p>
+  </header>
+
+  <main>
+    <div class="card-grid">
+      <!-- Example Card -->
+      <div class="card" data-player='{
+        "name": "Aryan Kumar",
+        "strikeRate": "145.6",
+        "matches": 58,
+        "jersey": 17,
+        "performance": "104* vs Warriors"
+      }'>
+        <img src="https://via.placeholder.com/150x150?text=Aryan" alt="Aryan Kumar">
+        <h3>Aryan Kumar</h3>
+      </div>
+
+      <div class="card" data-player='{
+        "name": "Ravi Das",
+        "strikeRate": "138.2",
+        "matches": 65,
+        "jersey": 11,
+        "performance": "3/14 vs Titans"
+      }'>
+        <img src="https://via.placeholder.com/150x150?text=Ravi" alt="Ravi Das">
+        <h3>Ravi Das</h3>
+      </div>
+
+      <div class="card" data-player='{
+        "name": "Jay Mehta",
+        "strikeRate": "152.3",
+        "matches": 47,
+        "jersey": 7,
+        "performance": "87 off 42 vs Kings"
+      }'>
+        <img src="https://via.placeholder.com/150x150?text=Jay" alt="Jay Mehta">
+        <h3>Jay Mehta</h3>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="player-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2 id="modal-name"></h2>
+      <ul>
+        <li><strong>Strike Rate:</strong> <span id="modal-strike"></span></li>
+        <li><strong>Matches Played:</strong> <span id="modal-matches"></span></li>
+        <li><strong>Jersey Number:</strong> <span id="modal-jersey"></span></li>
+        <li><strong>Best Performance:</strong> <span id="modal-performance"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
